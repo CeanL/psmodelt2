@@ -1,6 +1,6 @@
 {
     
-    "commerceSuiteVersion": "1811.0",
+    "commerceSuiteVersion": "1811.1",
     "troubleshootingModeEnabled":true,
     "extensions": [
      	"adaptivesearchsolr",
@@ -10,12 +10,13 @@
 		"commerceservicesbackoffice",
 		"solrfacetsearchbackoffice",
 		"solrserver",
+		"yacceleratorbackoffice",
 		"yacceleratorinitialdata",
+		"yacceleratorfulfilmentprocess",
 		"yacceleratorstorefront",
 		"ycommercewebservices",
 		"ycommercewebservicestest",
 		"electronicsstore",
-		"apparelstore",
 		"acceleratorwebservicesaddon",
 		"orderselfserviceaddon",
 		"customersupportbackoffice",
@@ -25,7 +26,7 @@
 		"couponbackoffice",
 		"droolsruleengineservices",
 		"couponfacades",
-		"couponservices",
+        "couponservices",
 		"promotionenginesamplesaddon",
 		"cmswebservices",
 		"smarteditwebservices",
@@ -42,6 +43,7 @@
 		"personalizationsmartedit",
 		"personalizationpromotionssmartedit",
 		"personalizationsampledataaddon",
+		"personalizationpromotionssampledataaddon",
 		"personalizationpromotions",
 		"personalizationpromotionsweb",
 		"personalizationservicesbackoffice",
@@ -59,35 +61,11 @@
         "pcmbackofficesamplesaddon",
         "modeltacceleratorservices",
         "azurecloudhotfolder",
-        "personalizationintegration",
-        "personalizationyprofile",
-        "personalizationaddon",
-        "profileservices",
-        "yaasconfigurationbackoffice",
-        "profiletagaddon",
-		"kymaintegrationbackoffice",
-		"kymaintegrationsampledata",
-		"ordermanagementaddon",
-		"ordermanagementfacades",
-		"ordermanagementwebservices",
-		"warehousing",
-		"warehousingbackoffice",
-		"warehousingfacades",
-		"warehousingwebservices",
-		"yacceleratorordermanagement",
-		"ondemandcommon",
-		"ondemandsampledata",
-		"merchandisingaddon",
-           	"merchandisingcmswebservices",
-        	"merchandisingsmartedit",
-        	"merchandisingservices",
-        	"merchandisingservicesbackoffice",
-        	"merchandisingstorefrontsampledataaddon",
-		"adminapi",
 		"outboundservices",
 		"odata2webservices",
 		"odata2webservicesfeaturetests",
-		"integrationbackoffice"
+		"kymaintegrationbackoffice",
+		"kymaintegrationsampledata"
     ],
 	"storefrontAddons": [
 		{
@@ -151,39 +129,14 @@
 		    "template": "yacceleratorstorefront"
 		},
 		{
-		    "addon": "personalizationaddon",
-		    "storefront": "yacceleratorstorefront",
-		    "template": "yacceleratorstorefront"
-		},
-		{
 		    "addon": "acceleratorwebservicesaddon",
 		    "storefront": "ycommercewebservices",
-		    "template": "yacceleratorstorefront"
-		},
-		{
-		    "addon": "profiletagaddon",
-		    "storefront": "yacceleratorstorefront",
-		    "template": "yacceleratorstorefront"
+		    "template": "ycommercewebservices"
 		},
 		{
 		    "addon": "cmsoccaddon",
 		    "storefront": "ycommercewebservices",
 		    "template": "ycommercewebservices"
-		},
-		{
-		    "addon": "ordermanagementaddon",
-		    "storefront": "yacceleratorstorefront",
-		    "template": "yacceleratorstorefront"
-		},
-		{
-		    "addon": "merchandisingaddon",
-		    "storefront": "yacceleratorstorefront",
-		    "template": "yacceleratorstorefront"
-		},
-		{
-		    "addon": "merchandisingstorefrontsampledataaddon",
-		    "storefront": "yacceleratorstorefront",
-		    "template": "yacceleratorstorefront"
 		}
 	],
     "properties": [
@@ -191,53 +144,24 @@
             "key": "lang.packs",
             "value": "de,en,es,es_CO,fr,it,ja,ko,pl,pt,ru,zh,zh_TW,hi,id,cs,cy"
         },
-	{
-	    "key": "endpoint.hac.platform.init.disabled",
-	    "value": "true"
-	},
-	{
-	    "key": "endpoint.hac.platform.update.disabled",
-	    "value": "true"
-	},
-        {
-            "key": "test.property.1",
-            "value": "test-property-1-value-prod",
-            "persona": "production"
-        },
-        {
-            "key": "test.property.1",
-            "value": "test-property-1-value-dev",
-            "persona": "development"
-        },
-        {
-            "key": "test.property.1",
-            "value": "test-property-1-value"
-        },
-        {
-            "key": "test.property.2",
-            "value": "test-property-2-value"
-        },
-		{
-			"key": "googleApiKey",
-			"value": ""
-		},
 		{
 			"key": "multicountrysampledataaddon.import.active",
 			"value": "false"
 		},
 		{
 			"key": "apiregistryservices.events.exporting",
-			"value": "false"
-		}       ,
+			"value": "true"
+		},
 		{
 			"key": "deployment.api.endpoint",
-			"value": "https://localhost:8088"
+			"value": "https://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
 		}
     ],
     "aspects": [
         {
             "name": "backoffice",
             "properties": [
+	    
 	                {
 	                    "key":"storefrontContextRoot",
 	                    "value":"/yacceleratorstorefront"
@@ -250,20 +174,9 @@
 	                    "key":"website.electronics.https",
 	                    "value":"https://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
 	                }
-            ],
+	    ],
             "webapps": [
-		{
-		    "name": "adminapi",
-		    "contextPath": "/adminapi"
-		},
-		{
-			"name": "adaptivesearchwebservices",
-			"contextPath": "/adaptivesearchwebservices"
-		},
-		{
-			"name": "odata2webservices"
-		},
-		{
+				{
                     "name": "hac",
                     "contextPath": "/hac"
                 },
@@ -276,32 +189,12 @@
                     "contextPath": "/backoffice"
                 },
 				{
-				    "name": "yacceleratorstorefront",
-				    "contextPath": "/yacceleratorstorefront"
-				},
-				{
-				    "name": "acceleratorservices",
-				    "contextPath": "/acceleratorservices"
-				},
-                {
-                    "name": "ycommercewebservices",
-                    "contextPath": "/rest"
-                },
-				{
 				    "name": "smartedit",
 				    "contextPath": "/smartedit"
 				},
 				{
 				    "name": "cmssmartedit",
 				    "contextPath": "/cmssmartedit"
-				},
-				{
-				    "name": "smarteditwebservices",
-				    "contextPath": "/smarteditwebservices"
-				},
-				{
-				    "name": "cmssmarteditwebservices",
-				    "contextPath": "/cmssmarteditwebservices"
 				},
 				{
 				    "name": "personalizationsmartedit",
@@ -312,48 +205,12 @@
 				    "contextPath": "/personalizationpromotionssmartedit"
 				},
 				{
-				    "name": "oauth2",
-				    "contextPath": "/authorizationserver"
+				    "name": "yacceleratorstorefront",
+				    "contextPath": "/yacceleratorstorefront"
 				},
 				{
-				    "name": "cmswebservices",
-				    "contextPath": "/cmswebservices"
-				},
-				{
-				    "name": "permissionswebservices",
-				    "contextPath": "/permissionswebservices"
-				},
-				{
-				    "name": "previewwebservices",
-				    "contextPath": "/previewwebservices"
-				},
-				{
-				    "name": "personalizationwebservices",
-				    "contextPath": "/personalizationwebservices"
-				},
-				{
-				    "name": "personalizationsearchsmartedit",
-				    "contextPath": "/personalizationsearchsmartedit"
-				},
-				{
-				    "name": "merchandisingsmartedit",
-				    "contextPath": "/merchandisingsmartedit"
-				},
-				{
-				    "name": "merchandisingcmswebservices",
-				    "contextPath": "/merchandisingcmswebservices"
-				},
-				{
-				    "name": "warehousingwebservices",
-				    "contextPath": "/warehousingwebservices"
-				},
-				{
-				    "name": "assistedservicewebservices",
-				    "contextPath": "/assistedservicewebservices"
-				},
-				{
-				    "name": "ordermanagementwebservices",
-				    "contextPath": "/ordermanagementwebservices"
+				    "name": "acceleratorservices",
+				    "contextPath": "/acceleratorservices"
 				}
             ]
         },
@@ -411,12 +268,12 @@
                     "contextPath": "/rest"
                 },
                 {
-                    "name": "hac",
-                    "contextPath": "/hac"
-                },
-                {
                     "name": "oauth2",
                     "contextPath": "/authorizationserver"
+                },
+		{
+                    "name": "hac",
+                    "contextPath": "/hac"
                 }
             ]
         },

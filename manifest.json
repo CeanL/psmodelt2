@@ -154,7 +154,7 @@
 		},
 		{
 			"key": "deployment.api.endpoint",
-			"value": "https://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
+			"value": "https://accstorefront.ckrtzpus55-i7660102-p2-public.model-t.cc.commerce.ondemand.com"
 		}
     ],
     "aspects": [
@@ -168,11 +168,11 @@
 	                },
 	                {
 	                    "key":"website.electronics.http",
-	                    "value":"http://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
+	                    "value":"http://accstorefront.ckrtzpus55-i7660102-p2-public.model-t.cc.commerce.ondemand.com"
 	                },
 	                {
 	                    "key":"website.electronics.https",
-	                    "value":"https://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
+	                    "value":"https://accstorefront.ckrtzpus55-i7660102-p2-public.model-t.cc.commerce.ondemand.com"
 	                }
 	    ],
             "webapps": [
@@ -239,11 +239,11 @@
                 },
                 {
                     "key":"website.electronics.http",
-                    "value":"http://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
+                    "value":"http://accstorefront.ckrtzpus55-i7660102-p2-public.model-t.cc.commerce.ondemand.com"
                 },
                 {
                     "key":"website.electronics.https",
-                    "value":"https://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
+                    "value":"https://accstorefront.ckrtzpus55-i7660102-p2-public.model-t.cc.commerce.ondemand.com"
                 },
                 {
                     "key":"xss.filter.header.X-Frame-Options",

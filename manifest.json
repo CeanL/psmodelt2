@@ -1,5 +1,5 @@
 {
-   "commerceSuiteVersion": "6.7.0.1",
+   "commerceSuiteVersion": "1811",
    "extensions": [
    	   "mcc",
        "backoffice",
@@ -39,80 +39,68 @@
        "assistedservicewebservices",
        "assistedservicepromotionaddon",
        "pcmbackofficesamplesaddon",
-       "customsitefulfilmentprocess",
-       "customsitefulfilmentprocess",
-       "customsitecockpits",
-       "customsitecore",
-       "customsitefacades",
-       "customsitetest",
-       "customsiteinitialdata",
-       "customsitestorefront",
+       "mystorefront",
        "personalizationsearchsamplesaddon"
    ],
    "storefrontAddons" : [
         {
             "addon": "adaptivesearchsamplesaddon",
-            "storefront": "customsitestorefront",
+            "storefront": "mystorefront",
             "template": "yacceleratorstorefront"
         },
         {
-            "addon": "acceleratorwebservicesaddon",
-            "storefront": "ycommercewebservices",
-            "template": "ycommercewebservices"
-        },
-        {
             "addon": "orderselfserviceaddon",
-            "storefront": "customsitestorefront",
+            "storefront": "mystorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "customerticketingaddon",
-            "storefront": "customsitestorefront",
+            "storefront": "mystorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "commerceorgsamplesaddon",
-            "storefront": "customsitestorefront",
+            "storefront": "mystorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "promotionenginesamplesaddon",
-            "storefront": "customsitestorefront",
+            "storefront": "mystorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "smarteditaddon",
-            "storefront": "customsitestorefront",
+            "storefront": "mystorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "multicountrysampledataaddon",
-            "storefront": "customsitestorefront",
+            "storefront": "mystorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "textfieldconfiguratortemplateaddon",
-            "storefront": "customsitestorefront",
+            "storefront": "mystorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "assistedservicepromotionaddon",
-            "storefront": "customsitestorefront",
+            "storefront": "mystorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "pcmbackofficesamplesaddon",
-            "storefront": "customsitestorefront",
+            "storefront": "mystorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "personalizationsearchsamplesaddon",
-            "storefront": "customsitestorefront",
+            "storefront": "mystorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "assistedservicestorefront",
-            "storefront": "customsitestorefront",
+            "storefront": "mystorefront",
             "template": "yacceleratorstorefront"
         }
         
@@ -174,6 +162,10 @@
                {
                     "key": "regioncache.queryregion.evictionpolicy",
                     "value": "LRU"
+                },
+                {
+                    "key":"storefrontContextRoot",
+                    "value":""
                 }
             ],
             "webapps": [
@@ -186,7 +178,7 @@
                     "contextPath": "/medias"
                 },
                 {
-                    "name": "customsitestorefront",
+                    "name": "mystorefront",
                     "contextPath": ""
                 }
             ]

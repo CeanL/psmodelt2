@@ -7,14 +7,12 @@
        "basecommercebackoffice",  
        "adaptivesearchsolr",
        "adaptivesearchbackoffice",
-       "adaptivesearchsamplesaddon",
        "adaptivesearchwebservices",
        "commerceservicesbackoffice",
        "solrfacetsearchbackoffice",
        "ycommercewebservices",
        "ycommercewebservicestest",
        "electronicsstore",
-       "acceleratorwebservicesaddon",
        "orderselfserviceaddon",
        "customersupportbackoffice",
        "customerticketingaddon",
@@ -42,72 +40,6 @@
        "mystorefront",
        "personalizationsearchsamplesaddon"
    ],
-   "storefrontAddons" : [
-        {
-            "addon": "adaptivesearchsamplesaddon",
-            "storefront": "mystorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "orderselfserviceaddon",
-            "storefront": "mystorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "customerticketingaddon",
-            "storefront": "mystorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "commerceorgsamplesaddon",
-            "storefront": "mystorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "promotionenginesamplesaddon",
-            "storefront": "mystorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "smarteditaddon",
-            "storefront": "mystorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "multicountrysampledataaddon",
-            "storefront": "mystorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "textfieldconfiguratortemplateaddon",
-            "storefront": "mystorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "assistedservicepromotionaddon",
-            "storefront": "mystorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "pcmbackofficesamplesaddon",
-            "storefront": "mystorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "personalizationsearchsamplesaddon",
-            "storefront": "mystorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "assistedservicestorefront",
-            "storefront": "mystorefront",
-            "template": "yacceleratorstorefront"
-        }
-        
-        
-                
-        
-    ],
    "properties": [
         {
             "key": "test.property.1",
